@@ -7,7 +7,7 @@ export default function Footer() {
     return(
         <div className='w-screen h-auto bottom-0'>
             <div className='flex flex-col align-top justify-center bg-darkgreen'> 
-                <div className='flex justify-center space-x-8'>
+                {/* <div className='flex justify-center space-x-8'>
                     <Link className='text-md font-jost text-white underline' href="/" target="_blank" rel='noreferrer noopener'>
                         <svg style={{ opacity: '50%' }} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
@@ -21,7 +21,7 @@ export default function Footer() {
                     <svg style={{ opacity: '50%' }} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-white">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                     </svg>
-                </div>
+                </div> */}
 
             
                 <div className='flex justify-center text-white text-opacity-40 md:text-md text-xs font-jost pt-2 pb-4'>
