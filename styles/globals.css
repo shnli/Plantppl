@@ -5,6 +5,7 @@
 @tailwind utilities;
 html,
 
+
 /* TYPEwriter  */
 :root {
   --bg-color: rgb(255, 255, 255);
@@ -84,6 +85,40 @@ h1::after {
 }
 
 
+
+.gradient-bg {
+  background-image: linear-gradient(180deg, #223832, #447650); 
+}
+.gradient-bgSmall {
+  background-image: linear-gradient(75deg, #223832, rgb(47, 130, 105), #447650); 
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Mont", sans-serif;
+}
+
+.background-animate {
+  background-size: 400%;
+
+  -webkit-animation: AnimationName 3s ease infinite;
+  -moz-animation: AnimationName 3s ease infinite;
+  animation: AnimationName 3s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
 /* OLD */
   .hide-scroll-bar {
     -ms-overflow-style: none;
@@ -96,9 +131,9 @@ h1::after {
 
 .linear-wipe {
   animation: flow 10s ease-in-out infinite;
-  background: linear-gradient(180deg, #5fa654, #9ad048);
-  background-size: 300%;
-  padding-left: 1rem;
+  background: linear-gradient(45deg, #9fcfad, #c2ffec);
+  background-size: 100%;
+  padding-left: 0rem;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -106,21 +141,21 @@ h1::after {
 
 .linear-wipe1 {
   animation: flow 10s ease-in-out infinite;
-  background: linear-gradient(180deg, #4092d9, #aa48d0);
-  background-size: 300%;
-  padding-left: 1rem;
+  background: linear-gradient(80deg, #347b1f, #37b0a8);
+  background-size: 100%;
+  padding-left: 0rem;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 
-body {
+/* body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+} */
 
 a {
   color: inherit;
