@@ -87,6 +87,9 @@ h1::after {
 
 
 .gradient-bg {
+  background-image: radial-gradient(#3e6866, #2d503d,  #223832); 
+}
+.gradient-bg2 {
   background-image: linear-gradient(180deg, #223832, #447650); 
 }
 .gradient-bgSmall {
@@ -131,7 +134,7 @@ body {
 
 .linear-wipe {
   animation: flow 10s ease-in-out infinite;
-  background: linear-gradient(45deg, #9fcfad, #c2ffec);
+  background: linear-gradient(45deg, #c4e4a1, #c5efe2);
   background-size: 100%;
   padding-left: 0rem;
   -webkit-background-clip: text;

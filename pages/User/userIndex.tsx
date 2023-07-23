@@ -11,28 +11,36 @@ export default function userIndex(){
                 </div>
 
                 <div className="flex items-center gradient-bgSmall min-h-[100px] rounded-lg shadow-md border-darkgreen border-2 lg:border-4 border-dashed border-opacity-40 py-4 md:px-8 px-4">
-                    <div className='flex items-center justify-start gap-4 md:gap-8 md:w-3/4 md:px-8'>
+                    <div className='flex items-center justify-start gap-4 md:gap-8 md:w-3/4 md:px-8 px-4'>
                         <div className="flex justify-center items-center">
-                            <img src="/nature.png" alt="..." className="rounded-full shadow-lg max-w-[80px] md:max-w-[90px] lg:max-w-[120px]"
+                            <img src="/nature1.png" alt="..." className="rounded-full shadow-lg max-w-[70px] md:max-w-[80px] lg:max-w-[110px]"
                             />
                         </div>
                         <div className='flex flex-col gap-2'>
                             <div className='font-bold text-white opacity-90'>
                                 THANKS FOR JOINING US
                             </div>
-                            <div className='flex items-center text-sm lg:text-lg md:text-md lg:gap-4 text-white opacity-90 '>
+                            <div className='flex items-center text-xs lg:text-lg md:text-md lg:gap-4 text-white opacity-90 '>
                                 <div>
                                     Your customized plant care journey begins here. Contact your nursery today!
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='hidden md:flex justify-end md:w-1/4 md:px-4 md:py-2 lg:px-16 lg:py-4 rounded-xl shadow-md border-2 border-darkgreen border-opacity-20'>
-                        <img src="/flowers.png" className='max-w-[150px] lg:max-w-[200px]'>
+                    <div className='hidden md:flex justify-end md:w-1/4 md:px-4 md:py-2 lg:px-16 lg:py-2 rounded-xl  border-darkgreen border-opacity-20'>
+                        <img src="/flowers2.png" className='max-w-[150px] lg:max-w-[200px]'>
                         </img>
                     </div>
                 </div>
                 
+                <div className='flex justify-center items-center gap-12'>
+                    <img src="/garden2.png" className='max-w-[25px]'></img>
+                    <img src="/garden2.png" className='max-w-[25px]'></img>
+                    <img src="/garden2.png" className='max-w-[25px]'></img>
+
+                    <img src="/garden2.png" className='hidden md:flex max-w-[25px]'></img>
+                </div>
+
                 <div className='flex items-center justify-between rounded-full border-2 px-4 lg:px-8 py-1 border-darkgreen border-opacity-30'>
                     <div className='font-semibold text-darkgreen text-lg lg:text-2xl md:text-xl opacity-80'>
                         MY GARDEN
@@ -42,12 +50,15 @@ export default function userIndex(){
                     </svg>
                 </div>
 
-                <GardenPlant></GardenPlant>
-                <GardenPlant></GardenPlant>
-                <GardenPlant></GardenPlant>
-                <GardenPlant></GardenPlant>
-                <GardenPlant></GardenPlant>
-                <GardenPlant></GardenPlant>
+                <div className='flex flex-col gap-2 lg:gap-4'>
+                    <GardenPlant></GardenPlant>
+                    <GardenPlant></GardenPlant>
+                    <GardenPlant></GardenPlant>
+                    <GardenPlant></GardenPlant>
+                    <GardenPlant></GardenPlant>
+                    <GardenPlant></GardenPlant>
+                </div>
+
 
             </div>
 

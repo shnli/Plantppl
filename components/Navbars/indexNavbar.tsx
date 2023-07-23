@@ -12,12 +12,12 @@ export default function IndexNavbar() {
         </Link>
         <div className='flex gap-4'>
             <Link href= "/Authentication/login">
-                <div className='flex justify-center px-4 py-2 rounded-full bg-darkgreen hover:bg-white hover:text-darkgreen hover:border-[1px] hover:border-darkgreen text-white '>
+                <div className='flex justify-center px-4 py-2 rounded-full bg-darkgreen opacity-80 hover:opacity-100 border-[1px] border-darkgreen text-white '>
                     Log In
                 </div>
             </Link>
-            <Link href = "/Authentication/login">
-                <div className='flex justify-center px-4 py-2 rounded-full border-[1px] border-darkgreen hover:bg-white text-darkgreen'>
+            <Link href = "/Authentication/signup">
+                <div className='flex justify-center px-4 py-2 rounded-full border-[1px] border-darkgreen hover:bg-white hover:bg-opacity-80 text-darkgreen'>
                     Sign Up
                 </div>
             </Link>
