@@ -49,6 +49,8 @@ model Task {
   projectId      Int      // Assuming projectId references the ID field of the Project model
 }
 
+///////DO NOT EDIT ABOVE THIS LINE!!!!!!!///////////////////////////////////////////////
+
 model Plant_User {
   id        Int     @id @default(autoincrement())
   step Int
