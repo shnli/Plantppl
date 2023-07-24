@@ -17,6 +17,7 @@ module.exports = {
     fontFamily: {
       Mont: ['Montserrat', 'sans-serif'],
       Barrio: ['Barrio', 'cursive'],
+      Right: ['Righteous', 'cursive']
     },
 
     colors: {
@@ -24,6 +25,10 @@ module.exports = {
       current: 'currentColor',
       'white': '#ffffff',
       'darkgreen': '#223832',
+      'red': '#f04b48',
+      'lightgreen': '#70b54a',
+
+
     },
   },
   plugins: [],

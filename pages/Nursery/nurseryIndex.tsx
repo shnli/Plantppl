@@ -1,6 +1,6 @@
 import Link from "next/link"
 import SideNavbar from "../../components/Navbars/sideNavbar"
-import TicketsNavbar from "../../components/Tickets/ticketsNavbar"
+import TicketsNavbar from "../../components/Nursery/Tickets/ticketsNavbar"
 
 export default function NurseryIndex(){
     return(

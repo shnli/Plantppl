@@ -16,7 +16,7 @@ export default function Home() {
           <div className='flex lg:flex-row flex-col justify-center lg:gap-24 md:gap-18 gap-12'>
             
             <div className='flex flex-col justify-center lg:text-start text-center gap-8'>
-              <div className='font-Barrio text-4xl md:text-5xl lg:text-8xl linear-wipe'>
+              <div className='font-Right text-5xl md:text-6xl lg:text-7xl text-white opacity-90'>
                 Plant People
               </div>
               <div>

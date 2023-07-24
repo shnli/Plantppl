@@ -1,7 +1,7 @@
 import Link from "next/link"
 import SideNavbar from "../../components/Navbars/sideNavbar"
-import TicketsNavbar from "../../components/Tickets/ticketsNavbar"
-import Tickets from "../../components/Tickets/tickets"
+import TicketsNavbar from "../../components/Nursery/Tickets/ticketsNavbar"
+import Tickets from "../../components/Nursery/Tickets/tickets"
 
 export default function ViewTickets(){
     return(
