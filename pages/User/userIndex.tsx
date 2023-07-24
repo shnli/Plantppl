@@ -3,8 +3,10 @@ import GardenPlant from '@/components/User/Garden/gardenPlant'
 import UserMobileNavbar from '@/components/User/userMobileNavbar'
 import Link from 'next/link'
 export default function userIndex(){
+    
     return(
         <>
+    
 
             <div className="flex flex-col font-Mont p-8 text-darkgreen text-md lg:text-2xl md:text-xl gap-6 lg:py-12 lg:gap-8 mb-24">
                 <div className='flex justify-between'>
@@ -12,7 +14,7 @@ export default function userIndex(){
                         Welcome Home, Firstname
                     </div>
                     <Link href="/" className=''>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="hidden md:flex w-6 h-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="hiddenw-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                         </svg>
                     </Link>
@@ -21,7 +23,7 @@ export default function userIndex(){
                 <div className="flex items-center gradient-bgSmall min-h-[100px] rounded-lg shadow-md border-darkgreen border-2 lg:border-4 border-dashed border-opacity-40 py-4 md:px-8 px-4">
                     <div className='flex items-center justify-start gap-4 md:gap-8 md:w-3/4 md:px-8 px-4'>
                         <div className="flex justify-center items-center">
-                            <img src="/nature1.png" alt="..." className="rounded-full shadow-lg max-w-[70px] md:max-w-[80px] lg:max-w-[110px]"
+                            <img src="/nature1.png" alt="..." className="rounded-full max-w-[70px] md:max-w-[80px] lg:max-w-[110px]"
                             />
                         </div>
                         <div className='flex flex-col gap-2'>

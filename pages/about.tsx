@@ -12,9 +12,9 @@ export default function About() {
           About Plant People
         </div>
         <div className="max-w-prose pb-4">
-          <p>
+          <div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod consectetur felis, vel finibus ipsum dapibus sit amet. Nullam quis consectetur velit. Sed tristique tellus in orci efficitur, id vestibulum purus consectetur. Etiam eu felis quam. Vivamus eget risus tincidunt, laoreet odio eu, viverra ligula. Integer ut lacus vel purus feugiat bibendum.
-          </p>
+          </div>
 
         </div>
         <div className="flex justify-center gap-4">

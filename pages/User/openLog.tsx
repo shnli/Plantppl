@@ -4,6 +4,7 @@ import ReplyLog from "@/components/User/Garden/Log/replyLog"
 import TicketLog from "@/components/User/Garden/Log/ticketLog"
 import Link from "next/link"
 import UserMobileNavbar from "@/components/User/userMobileNavbar"
+import ContactExpertButton from "@/components/User/Buttons/contactExpertButton"
 
 export default function OpenLogs(){
     return(

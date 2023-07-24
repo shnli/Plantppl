@@ -1,6 +1,8 @@
 
 import UserMobileNavbar from "@/components/User/userMobileNavbar"
 import Link from "next/link"
+import ContactExpertButton from "@/components/User/Buttons/contactExpertButton"
+import ViewLogButton from "@/components/User/Buttons/viewLogButton"
 
 export default function PlantProfile(){
     return(
@@ -12,7 +14,7 @@ export default function PlantProfile(){
             </Link>
 
             <div className="flex flex-col justify-center items-center pt-16">
-                <div className="flex flex-col items-center bg-white border-darkgreen border-opacity-20 border-[1px] w-[340px] md:w-[500px] min-h-[300px] rounded-lg shadow-md pt-8 pb-16 gap-4">
+                <div className="flex flex-col items-center bg-white border-darkgreen border-opacity-20 border-[1px] w-[350px] md:w-[500px] min-h-[300px] rounded-lg shadow-md pt-8 pb-16 gap-4">
                     <div className="flex flex-col justify-center items-center">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" className="w-24 h-24">
@@ -40,7 +42,7 @@ export default function PlantProfile(){
                             </div>
                         </div>
 
-                        <div className='flex flex-col justify-start items-start border-[1px] border-darkgreen w-[270px] md:w-[400px] md:max-w-[400px] min-h-[100px] rounded-md bg-white  text-xs'>
+                        <div className='flex flex-col justify-start items-start border-[1px] border-darkgreen w-[310px] md:w-[420px] md:max-w-[420px] min-h-[100px] rounded-md bg-white  text-xs'>
                             <div className="w-full overflow-hidden gradient-bgSmall p-1">
                                 <div className="flex justify-between">
                                     <div className="font-semibold text-white">
@@ -57,7 +59,7 @@ export default function PlantProfile(){
                             </div>
                         </div>
 
-                        <div className='flex flex-col justify-start items-start border-[1px] border-darkgreen w-[270px] md:w-[400px] md:max-w-[400px] min-h-[100px] rounded-md bg-white  text-xs'>
+                        <div className='flex flex-col justify-start items-start border-[1px] border-darkgreen w-[310px] md:w-[420px] md:max-w-[420px] min-h-[100px] rounded-md bg-white  text-xs'>
                             <div className="w-full overflow-hidden gradient-bgSmall p-1">
                                 <div className="flex justify-between">
                                     <div className="font-semibold text-white">
@@ -78,15 +80,19 @@ export default function PlantProfile(){
                             <div className="text-[10px]">
                                 Want advice from your Nursery? 
                             </div>
-                            <Link href="/" className='flex flex-row justify-center items-center border-[1px] border-darkgreen py-2 w-[250px] md:w-[400px] md:max-w-[400px] rounded-full gap-2 gradient-bgSmall font-semibold'>
-                                <div className="flex justify-center items-center text-center text-sm text-white">Contact an Expert</div>
-                            </Link>
+
+                            <div className="border-[1px] border-darkgreen text-xs gradient-bgSmall text-white rounded-full py-2 px-8 w-[310px] md:w-[420px] md:max-w-[420px]">
+                                <ContactExpertButton></ContactExpertButton>
+                            </div>
+
                             <div className="flex justify-center text-[10px]">
                                 - or -
                             </div>
-                            <Link href="/User/openLog" className='flex flex-row justify-center items-center border-[1px] border-darkgreen py-2 w-[250px] md:w-[400px] md:max-w-[400px] rounded-full gap-2 bg-white font-semibold'>
-                                <div className="flex justify-center items-center text-center text-sm text-dargreen">View Log</div>
-                            </Link>
+                            
+                            <div className="border-[1px] border-darkgreen text-xs bg-white text-darkgreen rounded-full py-2 px-8 w-[310px] md:w-[420px] md:max-w-[420px]">
+                                <ViewLogButton></ViewLogButton>
+                            </div>
+
                         </div>
 
                     </div>

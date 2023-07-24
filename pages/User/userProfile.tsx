@@ -12,8 +12,9 @@ export default function PlantProfile(){
             </Link>
 
             <div className="flex flex-col justify-center items-center pt-16">
-                <div className="flex flex-col items-center bg-white border-darkgreen border-opacity-20 border-[1px] w-[340px] md:w-[500px] min-h-[300px] rounded-lg shadow-md pt-8 pb-16 gap-4">
-                    <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col items-center bg-white border-darkgreen border-opacity-20 border-[1px] w-[340px] md:w-[500px] min-h-[300px] rounded-lg shadow-md pt-8 pb-16 gap-8">
+                    
+                    <div className="flex flex-col justify-center items-center gap-4">
                         <div>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="0.5" stroke="currentColor" className="w-24 h-24">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -22,7 +23,7 @@ export default function PlantProfile(){
                         <div className="text-center">
                             <div className="text-xl font-semibold">
                                 Firstname Lastname
-                            </div>
+                            </div> 
                             <div className="">
                                 Joined Date
                             </div>
@@ -33,28 +34,11 @@ export default function PlantProfile(){
 
                         <div className="flex justify-between text-sm">
                             <div className="font-semibold">
-                                Nursery of Origin
+                                Phone Number
                             </div>
-                            <div className="">
-                                Adopted: MM/DD/YYYY
-                            </div>
+
                         </div>
 
-
-                        <div className="flex items-center flex-col gap-2">
-                            <div className="text-[10px]">
-                                Want advice from your Nursery? 
-                            </div>
-                            <Link href="/" className='flex flex-row justify-center items-center border-[1px] border-darkgreen py-2 w-[250px] md:w-[400px] md:max-w-[400px] rounded-full gap-2 gradient-bgSmall font-semibold'>
-                                <div className="flex justify-center items-center text-center text-sm text-white">Contact an Expert</div>
-                            </Link>
-                            <div className="flex justify-center text-[10px]">
-                                - or -
-                            </div>
-                            <Link href="/User/openLog" className='flex flex-row justify-center items-center border-[1px] border-darkgreen py-2 w-[250px] md:w-[400px] md:max-w-[400px] rounded-full gap-2 bg-white font-semibold'>
-                                <div className="flex justify-center items-center text-center text-sm text-dargreen">View Log</div>
-                            </Link>
-                        </div>
 
                     </div>
 
