@@ -8,7 +8,7 @@ export default function Login() {
             <div className="flex flex-col items-center justify-center h-full">
                 <BackButtonLight></BackButtonLight>
 
-                <div className="font-Barrio text-white text-5xl lg:text-4xl py-4">
+                <div className="font-Right text-white text-5xl lg:text-4xl py-4">
                     Plant People
                 </div>
                 <div className="bg-white shadow rounded-xl lg:w-1/3  md:w-1/2 w-full p-10 ">

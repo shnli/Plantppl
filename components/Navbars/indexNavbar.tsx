@@ -6,7 +6,7 @@ export default function IndexNavbar() {
     <div className='absolute left-0 right-0 bg-white bg-opacity-90 font-Mont text-xs md:text-sm lg:text-md font-semibold'>
       <div className='flex items-center justify-between px-4 lg:px-24 py-2'>
         <Link href="/">
-            <div className='font-Barrio text-darkgreen md:text-lg lg:text-xl'>
+            <div className='font-Right text-darkgreen md:text-lg lg:text-xl'>
             Plant People
             </div>
         </Link>

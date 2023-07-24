@@ -9,7 +9,7 @@ export default function NurseryIndex(){
             <div className="px-2 py-4 sm:ml-64 font-Mont">
                 <div className="border-2 border-gray-200 border-dashed min-h-[700px] rounded-lg px-4 ">
                     <TicketsNavbar></TicketsNavbar>
-                    Main Menu
+                    Main Menu (View on Desktop)
                 </div>
             </div>
         </div>

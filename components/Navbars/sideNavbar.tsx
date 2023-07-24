@@ -19,7 +19,7 @@ export default function SideNavbar() {
             <aside id="default-sidebar" className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
                 <div className="h-full px-8 py-8 overflow-y-auto border-r-2">
                     <ul className="space-y-4 ">
-                        <Link href="/" className="flex items-center text-primary-blue font-Barrio">
+                        <Link href="/" className="flex items-center text-primary-blue font-Right">
                             <span className="ml-3 pb-12 self-center text-xl font-semibold whitespace-nowrap ">Plant People</span>
                         </Link>
                         
