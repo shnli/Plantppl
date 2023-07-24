@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function IndexNavbar() {
   return (
-    <div className='absolute left-0 right-0 bg-white bg-opacity-80 font-Mont text-xs md:text-sm lg:text-md font-semibold'>
+    <div className='absolute left-0 right-0 bg-white bg-opacity-90 font-Mont text-xs md:text-sm lg:text-md font-semibold'>
       <div className='flex items-center justify-between px-4 lg:px-24 py-2'>
         <Link href="/">
             <div className='font-Barrio text-darkgreen md:text-lg lg:text-xl'>
