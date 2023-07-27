@@ -53,6 +53,16 @@ model Task {
 
 model Plant_User {
   id        Int     @id @default(autoincrement())
+  email String
+  phone Int
+  firstName String
+  lastName String
+  profilePicture String // Method to store images
+  remarks String
+}
+
+model Plant_Nursery {
+  id        Int     @id @default(autoincrement())
   step Int
   startCheck Boolean
   finishCheck Boolean
@@ -67,3 +77,5 @@ model Plant_User {
   executingSide String
   projectId      Int      // Assuming projectId references the ID field of the Project model
 }
+
+
