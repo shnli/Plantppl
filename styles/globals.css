@@ -7,6 +7,14 @@ html,
 
 
 /* TYPEwriter  */
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Mont", sans-serif;
+}
+
 :root {
   --bg-color: rgb(255, 255, 255);
   --typewriterSpeed: 3s;
@@ -94,12 +102,6 @@ h1::after {
 }
 .gradient-bgSmall {
   background-image: linear-gradient(75deg, #223832, rgb(47, 130, 105), #447650); 
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Mont", sans-serif;
 }
 
 .background-animate {

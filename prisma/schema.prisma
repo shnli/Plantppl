@@ -51,19 +51,127 @@ model Task {
 
 ///////DO NOT EDIT ABOVE THIS LINE!!!!!!!///////////////////////////////////////////////
 
-model Plant_User {
-  id        Int     @id @default(autoincrement())
-  step Int
-  startCheck Boolean
-  finishCheck Boolean
-  task String
-  lead String
-  duration String
-  expectedStart String
-  expectedFinish String
-  start String
-  finish String
-  remarks String
-  executingSide String
-  projectId      Int      // Assuming projectId references the ID field of the Project model
+model P_Account {
+  id                  String  @id @default(cuid())
+  email               String  @unique
+  name                String?
+  
+  user                P_User  @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId              String  // Add the userId field
+
+  provider            String
+  providerP_AccountId String
+  @@unique([provider, providerP_AccountId])
+}
+
+model P_Customer_Logs{
+  id           String    @id @default(cuid())
+  authorName   String
+  publishTime  DateTime  @default(now())
+
+  caption String
+  photoUrl      String   
+
+  plant P_Plant   @relation(fields: [plantId], references: [id])
+  plantId  String     @unique  
+}
+
+
+model P_Customer_Ticket{
+  id           String    @id @default(cuid())
+  authorName   String
+  publishTime  DateTime  @default(now())
+
+  subject String
+  issueDescription        String
+  contact      String
+
+  wateringSchedule String
+  location String
+  environment String
+  photoUrl      String     
+
+  // has the ticket been replied to?
+  repliedTo Boolean
+  // time nursery replied to ticket
+  repliedTime DateTime?
+
+  plant P_Plant   @relation(fields: [plantId], references: [id])
+  plantId  String     @unique
+
+  author       P_User      @relation(fields: [authorId], references: [id])
+  authorId     String    @unique
+  ticketReplies   P_Business_Ticket[]
+}
+
+model P_Business_Ticket{
+  id           String    @id @default(cuid())
+  authorName   String
+  expertName  String
+  nurseryContact      String
+  publishTime  DateTime  @default(now())
+  
+  issueDescription        String
+  helpfulLinks String
+
+  plant P_Plant   @relation(fields: [plantId], references: [id])
+  plantId  String     @unique
+
+  ticketReply P_Customer_Ticket   @relation(fields: [ticketId], references: [id])
+  ticketId  String
+
+  liked Boolean     @default(false)
+  disliked Boolean      @default(false)
+
+  author       P_User      @relation(fields: [authorId], references: [id])
+  authorId     String    @unique
+}
+
+// Represents plant data, including information about the owner (user), customer tickets, business tickets, and customer logs related to the plant.
+model P_Plant{
+  id              String    @id @default(cuid())
+  plantName String
+  plantType String
+  photoUrl      String
+
+  wateringSchedule String
+  location String
+  environment String
+  notes String
+
+  owner       P_User      @relation(fields: [authorId], references: [id])
+  ticketReplies      P_Business_Ticket[]
+  tickets      P_Customer_Ticket[]
+  logs      P_Customer_Logs[]
+
+  authorId String     @unique
+}
+
+// Represents user data, including information about their role (admin or customer), plants they own, and their customer and business tickets.
+model P_User {
+  id              String    @id @default(cuid())
+  name            String
+  email           String?    @unique
+  phoneNumber           String    @unique
+  emailVerified   DateTime?
+  photoUrl           String?
+
+  business           Boolean   @default(false)
+  address String?
+  businessTicket          P_Business_Ticket?
+
+  customer          Boolean   @default(false)
+  plants      P_Plant?
+  customerTicket    P_Customer_Ticket?
+
+  accounts        P_Account[]
+}
+
+model P_VerificationToken {
+  id         Int      @id @default(autoincrement())
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
 }
